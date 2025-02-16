@@ -3,6 +3,7 @@ import classes from './Header.module.css';
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
+import LowerHeader from "./LowerHeader";
 
 const Header = () => {
   return (
@@ -42,9 +43,9 @@ const Header = () => {
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png?20151118161041"
                 alt=""
               />
-              <section name="" id="">
+              <select name="" id="">
                 <option value="">EN</option>
-              </section>
+              </select>
             </a>
             <a href="">
               <p>Sign In</p>
@@ -61,6 +62,7 @@ const Header = () => {
           </div>
         </div>
       </section>
+      <LowerHeader />
     </>
   );
 };
