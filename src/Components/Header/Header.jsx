@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Header.module.css";
+import classes from './Header.module.css';
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <section>
-        <div className={classes.Header_container}>
+        <div className={classes.header_container}>
           {/* logo section*/}
           <div className={classes.logo_container}>
             <a href="#">
