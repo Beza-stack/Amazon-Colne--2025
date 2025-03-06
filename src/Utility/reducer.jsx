@@ -26,7 +26,7 @@ export const reducer = (state, action)=>{
         }
 
     case Type.REMOVE_FROM_BASKET :
-        const index = state.basket.findIndex (item=> item.id===action.id) 
+        const index = state.basket.findIndex(item=>item.id===action.id) 
         let newBasket = [...state.basket]   
 
         if (index >=0){
@@ -40,7 +40,11 @@ export const reducer = (state, action)=>{
             ...state,
             basket:newBasket
         }
-
+        case Type.EMPTY_BASKET:
+            return {
+              ...state,
+              basket: [],
+            };
         case Type.SET_USER:
             return{
                 ...state,
